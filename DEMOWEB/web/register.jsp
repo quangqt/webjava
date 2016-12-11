@@ -12,15 +12,10 @@
         <title>JSP Page</title>
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
         <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- Custom Theme files -->
         <link href="css/style.css" rel='stylesheet' type='text/css' />
         <script src="js/simpleCart.min.js"></script>
-        <!-- Custom Theme files -->
-        <!--webfont-->
         <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-        <!-- start menu -->
         <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
         <script type="text/javascript" src="js/megamenu.js"></script>
         <script>$(document).ready(function () {
@@ -211,17 +206,18 @@
         <div class="single_top">
             <div class="container"> 
                 <div class="register">
-                    <form action="UserServlet" method="POST"> 
+                    <form action="UsersServlet" method="POST"> 
                         <div class="register-top-grid">
                             <h3 style="color: #D5331D">ĐĂNG KÝ TÀI KHOẢN</h3>
                             <div>
                                 <span>Họ Và Tên(*)<label>*</label></span>
-                                <input type="text" name="fullname" id="email"> 
+                                <input type="text" name="email" id="email">
+                                <span id="user-result"></span>
+
                             </div>
                             <div>
                                 <span>Email(*)<label>*</label></span>
                                 <input type="text" name="email" id="email"> 
-                                <span id="user-result"></span>
                             </div>
                             <div class="clearfix"> </div>
                             <a class="news-letter" href="#">

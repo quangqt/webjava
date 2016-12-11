@@ -5,16 +5,16 @@
         <servlet-class>controller.CheckEmailServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>UserServlet</servlet-name>
-        <servlet-class>controller.UserServlet</servlet-class>
+        <servlet-name>UsersServlet</servlet-name>
+        <servlet-class>controller.UsersServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CheckEmailServlet</servlet-name>
         <url-pattern>/CheckEmailServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/UserServlet</url-pattern>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/UsersServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

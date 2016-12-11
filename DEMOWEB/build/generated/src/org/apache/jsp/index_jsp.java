@@ -51,15 +51,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>JSP Page</title>\n");
       out.write("        <script type=\"application/x-javascript\"> addEventListener(\"load\", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>\n");
       out.write("        <link href=\"css/bootstrap.css\" rel='stylesheet' type='text/css' />\n");
-      out.write("        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n");
-      out.write("        <!-- Custom Theme files -->\n");
       out.write("        <link href=\"css/style.css\" rel='stylesheet' type='text/css' />\n");
       out.write("        <script src=\"js/simpleCart.min.js\"></script>\n");
-      out.write("        <!-- Custom Theme files -->\n");
-      out.write("        <!--webfont-->\n");
       out.write("        <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>\n");
       out.write("        <script type=\"text/javascript\" src=\"js/jquery-1.11.1.min.js\"></script>\n");
-      out.write("        <!-- start menu -->\n");
       out.write("        <link href=\"css/megamenu.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
       out.write("        <script type=\"text/javascript\" src=\"js/megamenu.js\"></script>\n");
       out.write("        <script>$(document).ready(function () {\n");

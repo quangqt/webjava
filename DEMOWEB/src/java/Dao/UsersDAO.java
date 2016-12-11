@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import model.Users;
 /**
  *
  * @author SUALAPTOP24h.NET
@@ -30,6 +30,22 @@ public class UsersDAO {
                 connection.close();
                 return true;
             }
+        } catch (SQLException ex) {
+            Logger.getLogger(UsersDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
+    public boolean insertUser(Users u){
+        Connection connection= DBConnect.getConnecttion();
+        String sql="INSERT INTO users VALUES(?,?,?,?)";
+        try {
+            PreparedStatement ps=connection.prepareCall(sql);
+            ps.setLong(1,u.getUserID());
+            ps.setString(2,u.getUserEmail());
+            ps.setString(3,u.getUserPass());
+            ps.setBoolean(4,u.isUserRole());
+            ps.executeUpdate();
+            return  true;
         } catch (SQLException ex) {
             Logger.getLogger(UsersDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
